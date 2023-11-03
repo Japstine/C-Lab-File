@@ -1,0 +1,890 @@
+// e1 q1
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Jeet Patel \n H8 Divine Palace \n Manjalpur Vadodara");
+
+    return 0;
+}
+
+// e1 q2
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+
+    printf("Name: Jeet Patel \nRoll Number: 23BIT156\n");
+
+    printf("Enter the two numbers: \n");
+    scanf("%d%d", &a, &b);
+
+    printf("The sum of the two numbers is: %d \n", a + b);
+    printf("Their subtraction is: %d\n", a - b);
+    printf("Their multiplication is: %d\n", a * b);
+
+    float c = b;
+
+    printf("Their division is: %.2f", a / c );
+
+    return 0;
+
+}
+
+// e1 q3
+
+#include <stdio.h>
+
+int main() {
+    int choice;
+    float hours, minutes;
+
+    printf("Name: Jeet Patel \nRoll Number: 23BIT156\n");
+
+    printf("Choose an option:\n");
+    printf("1. Convert hours to minutes\n");
+    printf("2. Convert minutes to hours\n");
+    printf("Enter your choice (1 or 2): ");
+    scanf("%d", &choice);
+
+    if (choice == 1) {
+        printf("Enter the number of hours: ");
+        scanf("%f", &hours);
+        minutes = hours * 60;
+        printf("%.2f hours is equal to %.2f minutes\n", hours, minutes);
+    } else if (choice == 2) {
+        printf("Enter the number of minutes: ");
+        scanf("%f", &minutes);
+        hours = minutes / 60;
+        printf("%.2f minutes is equal to %.2f hours\n", minutes, hours);
+    } else {
+        printf("Invalid choice. Please enter 1 or 2.\n");
+    }
+
+    return 0;
+}
+
+// e1 q4
+
+#include <stdio.h>
+
+int main()
+{
+    float d;
+
+    printf("Name: Jeet Patel \nRoll Number: 23BIT156\n");
+
+    printf("Enter the number of dollars: \n");
+    scanf("%f", &d);
+
+    printf("The conversion to rupees is: %.2f", 83.27 * d);
+}
+
+// e1 q5
+
+#include <stdio.h>
+
+int main()
+{
+    float c, f;
+
+    printf("Name: Jeet Patel \nRoll Number: 23BIT156\n");
+
+    printf("Enter the temperature in celsius: \n");
+    scanf("%f", &c);
+
+    f = (9 * c / 5) + 32;
+
+    printf("The temperature in fahrenhiet is : %.2f", f);
+}
+
+
+// e1 q6
+
+#include <stdio.h>
+
+int main() {
+    float principal, time, rate, simpleInterest;
+
+    printf("Name: Jeet Patel \nRoll Number: 23BIT156\n");
+
+    // Fixed interest rate of 10%
+    rate = 0.10;
+
+    // Input principal amount and time period from the user
+    printf("Enter the principal amount: ");
+    scanf("%f", &principal);
+    printf("Enter the time (in years): ");
+    scanf("%f", &time);
+
+    // Calculate Simple Interest
+    simpleInterest = (principal * rate * time);
+
+    // Display the result
+    printf("Principal Amount: $%.2f\n", principal);
+    printf("Time (in years): %.2f\n", time);
+    printf("Rate of Interest: %.2f%%\n", rate * 100);
+    printf("Simple Interest: $%.2f\n", simpleInterest);
+
+    return 0;
+}
+
+// e1 q7
+
+#include <stdio.h>
+
+int main() {
+    double price;
+    int paise;
+
+    printf("Name: Jeet Patel \nRoll Number: 23BIT156\n");
+
+
+    printf("Enter the price in decimal form: ");
+    scanf("%lf", &price);
+
+    paise = (int)(price * 100);
+
+    printf("Price in paise: %d paise\n", paise);
+
+    return 0;
+}
+
+// e1 q8
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    printf("Name: Jeet Patel \nRoll Number: 23BIT156\n");
+    
+    float r, area, circ;
+    const double pi = 3.14159265359;
+
+    r = sqrt(4*4 + 5*5); // Center is (0, 0) and a point on the circle is (4, 5)
+
+    area = pi * r * r;
+    circ = 2 * pi * r;
+
+    printf("Radius: %.2f\n", r);
+    printf("Perimeter: %.2f\n", circ);
+    printf("Area: %.2f\n", area);
+
+    return 0;
+
+}
+
+// e1 q9
+
+#include <stdio.h>
+
+int main() {
+    float priceRice = 16.75;  // Price of 1 kg of rice
+    float priceSugar = 15.0;  // Price of 1 kg of sugar
+    float quantityRice, quantitySugar;
+    float totalBill;
+
+    printf("Name: Jeet Patel \nRoll Number: 23BIT156\n");
+
+    printf("Enter the quantity of rice (in kg): ");
+    scanf("%f", &quantityRice);
+
+    printf("Enter the quantity of sugar (in kg): ");
+    scanf("%f", &quantitySugar);
+
+    totalBill = (priceRice * quantityRice) + (priceSugar * quantitySugar);
+
+    printf("Supermarket Bill\n");
+    printf("Item\t\tQuantity (kg)\tPrice per kg (Rs.)\tTotal Price (Rs.)\n");
+    printf("Rice\t\t%.2f\t\t%.2f\t\t\t%.2f\n", quantityRice, priceRice, priceRice * quantityRice);
+    printf("Sugar\t\t%.2f\t\t%.2f\t\t\t%.2f\n…
+
+
+
+[2:13 PM, 11/3/2023] Jeet: exercise 1 complete
+
+// e2 q1
+
+#include <stdio.h>
+
+int main() {
+    int x, y, z, temp;
+
+    printf("Name: Jeet Patel \nRoll Number: 23BIT156\n");
+
+    printf("Enter the values of x, y, and z: ");
+    scanf("%d %d %d", &x, &y, &z);
+
+    temp = x;
+    x = y;
+    y = z;
+    z = temp;
+
+    printf("After rotation:\n");
+    printf("x: %d\n", x);
+    printf("y: %d\n", y);
+    printf("z: %d\n", z);
+
+    return 0;
+}
+
+
+
+// e2 q2
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int numIntervals;
+    printf("Enter the number of time intervals: ");
+    scanf("%d", &numIntervals);
+
+    for (int i = 0; i < numIntervals; i++) {
+        double u, a, t, distance;
+
+        printf("Enter the initial velocity (m/s): ");
+        scanf("%lf", &u);
+
+        printf("Enter the acceleration (m/s^2): ");
+        scanf("%lf", &a);
+
+        printf("Enter the time interval (seconds): ");
+        scanf("%lf", &t);
+
+        distance = u * t + (0.5 * a * t * t);
+        printf("Distance traveled in %.2f seconds: %.2f meters\n", t, distance);
+    }
+
+    return 0;
+}
+[2:26 PM, 11/3/2023] Jeet: Exer 2 complete
+
+// e3 q1
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int num;
+
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    if (num % 2 == 0) {
+        printf("%d is an even number\n", num);
+    } else {
+        printf("%d is an odd number\n", num);
+    }
+
+    return 0;
+}
+
+
+// e3 q2 part 1
+
+#include <stdio.h>
+
+int main() {
+
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+    
+    int num1, num2, num3, num4, largest;
+
+    printf("Enter four numbers: ");
+    scanf("%d %d %d %d", &num1, &num2, &num3, &num4);
+
+    if (num1 >= num2) {
+        if (num1 >= num3) {
+            if (num1 >= num4) {
+                largest = num1;
+            } else {
+                largest = num4;
+            }
+        } else {
+            if (num3 >= num4) {
+                largest = num3;
+            } else {
+                largest = num4;
+            }
+        }
+    } else {
+        if (num2 >= num3) {
+            if (num2 >= num4) {
+                largest = num2;
+            } else {
+                largest = num4;
+            }
+        } else {
+            if (num3 >= num4) {
+                largest = num3;
+            } else {
+                largest = num4;
+            }
+        }
+    }
+
+    printf("The largest number is: %d\n", largest);
+
+    return 0;
+}
+
+
+// e3 q2 part 2
+
+#include <stdio.h>
+
+int main() {
+    
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int num1, num2, num3, num4, largest;
+
+    printf("Enter four numbers: ");
+    scanf("%d %d %d %d", &num1, &num2, &num3, &num4);
+
+    largest = num1;
+
+    if (num2 > largest) {
+        largest = num2;
+    }
+    if (num3 > largest) {
+        largest = num3;
+    }
+    if (num4 > largest) {
+        largest = num4;
+    }
+
+    printf("The largest number is: %d\n", largest);
+
+    return 0;
+}
+
+
+// e3 q3
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int marksMath, marksPhysics, marksChemistry;
+    int totalMarks;
+
+    printf("Enter the marks in Mathematics: ");
+    scanf("%d", &marksMath);
+
+    printf("Enter the marks in Physics: ");
+    scanf("%d", &marksPhysics);
+
+    printf("Enter the marks in Chemistry: ");
+    scanf("%d", &marksChemistry);
+
+    totalMarks = marksMath + marksPhysics + marksChemistry;
+
+    if (marksMath >= 60 && marksPhysics >= 50 && marksChemistry >= 40 &&
+        (totalMarks >= 200 || (marksMath + marksPhysics) >= 150)) {
+        printf("Eligible for admission to the professional course.\n");
+    } else {
+        printf("Not eligible for admission to the professional course.\n");
+    }
+
+    return 0;
+}
+
+// Exer 3 complete 
+// e4 q1
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int N;
+    double sum = 0.0;
+    double average;
+
+    printf("Enter the number of values (N): ");
+    scanf("%d", &N);
+
+    if (N <= 0) {
+        printf("N should be a positive integer.\n");
+        return 1;
+    }
+
+    printf("Enter %d numbers:\n", N);
+    for (int i = 0; i < N; i++) {
+        double num;
+        scanf("%lf", &num);
+        sum += num;
+    }
+
+    average = sum / N;
+
+    printf("Average of the %d numbers is: %.2f\n", N, average);
+
+    return 0;
+}
+
+// e4 q2
+
+#include <stdio.h>
+
+int isPrime(int num) {
+    if (num <= 1) {
+        return 0; // Not a prime number
+    }
+    for (int i = 2; i * i <= num; i++) {
+        if (num % i == 0) {
+            return 0; // Not a prime number
+        }
+    }
+    return 1; // Prime number
+}
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int count = 0;
+
+    printf("Prime numbers between 100 and 200 are:\n");
+    for (int i = 100; i <= 200; i++) {
+        if (isPrime(i)) {
+            printf("%d ", i);
+            count++;
+        }
+    }
+
+    printf("\nTotal prime numbers: %d\n", count);
+
+    return 0;
+}
+
+// e4 q3
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int number;
+    printf("Enter a number for the multiplication table: ");
+    scanf("%d", &number);
+
+    printf("Multiplication table for %d:\n", number);
+    for (int i = 1; i <= 10; i++) {
+        printf("%d * %d = %d\n", number, i, number * i);
+    }
+
+    return 0;
+}
+
+// e4 q4
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int count = 0;
+
+    printf("Integers between 1 and 100 not divisible by 2 or 3:\n");
+    for (int i = 1; i <= 100; i++) {
+        if (i % 2 != 0 && i % 3 != 0) {
+            printf("%d ", i);
+            count++;
+        }
+    }
+
+    printf("\nTotal count: %d\n", count);
+
+    return 0;
+}
+
+// e4 q5
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int sum = 0;
+    int count = 0;
+
+    printf("Integers between 0 and 100 divisible by 6 but not divisible by 4:\n");
+    for (int i = 0; i <= 100; i++) {
+        if (i % 6 == 0 && i % 4 != 0) {
+            printf("%d ", i);
+            sum += i;
+            count++;
+        }
+    }
+
+    printf("\nTotal count: %d\n", count);
+    printf("Sum of the values: %d\n", sum);
+
+    return 0;
+}
+
+// Exer 4 complete 
+
+// e5 q1 (Flexible Array)
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int n;
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        printf("Invalid array size.\n");
+        return 1;
+    }
+
+    int array[n];
+    int positiveCount = 0;
+    int negativeCount = 0;
+
+    printf("Enter %d integers:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &array[i]);
+        if (array[i] > 0) {
+            positiveCount++;
+        } else if (array[i] < 0) {
+            negativeCount++;
+        }
+    }
+
+    printf("Number of positive numbers: %d\n", positiveCount);
+    printf("Number of negative numbers: %d\n", negativeCount);
+
+    return 0;
+}
+
+// e5 q2
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int n = 10;
+    double numbers[n];
+    double sum = 0.0;
+    double mean, variance, stdDev;
+
+    // Input 10 numbers
+    printf("Enter 10 numbers:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%lf", &numbers[i]);
+        sum += numbers[i];
+    }
+
+    // Calculate mean
+    mean = sum / n;
+
+    // Calculate variance
+    double varianceSum = 0.0;
+    for (int i = 0; i < n; i++) {
+        varianceSum += pow(numbers[i] - mean, 2);
+    }
+    variance = varianceSum / n;
+
+    // Calculate standard deviation
+    stdDev = sqrt(variance);
+
+    // Display the results
+    printf("Sum: %.2f\n", sum);
+    printf("Mean: %.2f\n", mean);
+    printf("Variance: %.2f\n", variance);
+    printf("Standard Deviation: %.2f\n", stdDev);
+
+    return 0;
+}
+
+// e5 q3
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int rows, cols;
+
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+    printf("Enter the number of columns: ");
+    scanf("%d", &cols);
+
+    int A[rows][cols], B[rows][cols], sum[rows][cols], difference[rows][cols];
+
+    printf("Enter elements of matrix A:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &A[i][j]);
+        }
+    }
+
+    printf("Enter elements of matrix B:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &B[i][j]);
+        }
+    }
+
+    printf("A + B:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            sum[i][j] = A[i][j] + B[i][j];
+            printf("%d ", sum[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("A - B:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            difference[i][j] = A[i][j] - B[i][j];
+            printf("%d ", difference[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+// Exer 5 complete
+
+// e6 q1
+
+#include <stdio.h>
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int sub(int a, int b) {
+    return a - b;
+}
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int num1 = 20, num2 = 10;
+    int sum, difference;
+
+    sum = add(num1, num2);
+    difference = sub(num1, num2);
+
+    printf("%d + %d = %d\n", num1, num2, sum);
+    printf("%d - %d = %d\n", num1, num2, difference);
+
+    return 0;
+}
+
+// e6 q2
+
+#include <stdio.h>
+#include <math.h>
+
+double calculateSimpleInterest(double principal, double rate, double time) {
+    return (principal * rate * time) / 100.0;
+}
+
+double calculateCompoundInterest(double principal, double rate, double time) {
+    return principal * (pow(1 + rate / 100.0, time) - 1);
+}
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    double principal, rate, time;
+    char choice;
+
+    printf("Enter the principal amount: ");
+    scanf("%lf", &principal);
+
+    printf("Enter the time (in years): ");
+    scanf("%lf", &time);
+
+    rate = 10.0; // Fixed interest rate of 10%
+
+    printf("Do you want to calculate Simple Interest (SI) or Compound Interest (CI) [S/C]: ");
+    scanf(" %c", &choice);
+
+    if (choice == 'S' || choice == 's') {
+        double simpleInterest = calculateSimpleInterest(principal, rate, time);
+        printf("Simple Interest (SI): %.2lf\n", simpleInterest);
+    } else if (choice == 'C' || choice == 'c') {
+        double compoundInterest = calculateCompoundInterest(principal, rate, time);
+        printf("Compound Interest (CI): %.2lf\n", compoundInterest);
+    } else {
+        printf("Invalid choice. Please enter 'S' for Simple Interest or 'C' for Compound Interest.\n");
+    }
+
+    return 0;
+}
+
+
+// Exer 6 complete
+
+// e7 q1
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int numUsers;
+    printf("Enter the number of users: ");
+    scanf("%d", &numUsers);
+
+    char names[numUsers][50];
+    int units[numUsers];
+    double charges[numUsers];
+
+    for (int i = 0; i < numUsers; i++) {
+        printf("Enter the name of user %d: ", i + 1);
+        scanf("%s", names[i]);
+        printf("Enter the number of units consumed by %s: ", names[i]);
+        scanf("%d", &units[i]);
+
+        int meterCharge = 100;
+        double totalCharge = 0;
+
+        if (units[i] <= 200) {
+            totalCharge = meterCharge + (units[i] * 0.80);
+        } else if (units[i] <= 300) {
+            totalCharge = meterCharge + (200 * 0.80) + ((units[i] - 200) * 0.90);
+        } else {
+            totalCharge = meterCharge + (200 * 0.80) + (100 * 0.90) + ((units[i] - 300) * 1.00);
+        }
+
+        if (totalCharge > 400) {
+            double surcharge = 0.15 * totalCharge;
+            totalCharge += surcharge;
+        }
+
+        charges[i] = totalCharge;
+    }
+
+    printf("User Charges:\n");
+    for (int i = 0; i < numUsers; i++) {
+        printf("%s: %.2lf\n", names[i], charges[i]);
+    }
+
+    return 0;
+}
+
+// e7 q2
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    char str[100]; // Assuming a maximum length of 100 characters for the string
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    int length = 0;
+    for (int i = 0; str[i] != '\0'; i++) {
+        length++;
+    }
+
+    printf("Length of the string: %d\n", length);
+
+    return 0;
+}
+
+// e7 q3
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    char line[100]; // Assuming a maximum length of 100 characters for the line
+    char targetChar;
+    int count = 0;
+
+    printf("Enter a line of text: ");
+    fgets(line, sizeof(line), stdin);
+
+    printf("Enter the character to count: ");
+    scanf(" %c", &targetChar); // Note the space before %c to consume any leading whitespace
+
+    for (int i = 0; line[i] != '\0'; i++) {
+        if (line[i] == targetChar) {
+            count++;
+        }
+    }
+
+    printf("Number of occurrences of '%c' in the line: %d\n", targetChar, count);
+
+    return 0;
+}
+
+// Exer 7 complete
+
+// e8 q1
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int x = 42;
+    int *ptr = &x; // Declare a pointer and point it to the address of x
+
+    printf("Address of variable x: %p\n", ptr);
+    printf("Value of variable x: %d\n", *ptr);
+
+    return 0;
+}
+
+// e8 q2
+
+#include <stdio.h>
+
+int main() {
+    printf("Name: Jeet Patel\nRoll Number: 23BIT156\n");
+
+    int n;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    
+    // Input elements into the array
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int sum = 0;
+    int *ptr = arr; // Initialize a pointer to the first element of the array
+
+    // Compute the sum using the pointer
+    for (int i = 0; i < n; i++) {
+        sum += *ptr;
+        ptr++; // Move the pointer to the next element
+    }
+
+    printf("Sum of elements in the array: %d\n", sum);
+
+    return 0;
+}
+
+// Exer 8 complete
