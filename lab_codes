@@ -201,8 +201,11 @@ int main() {
     printf("Supermarket Bill\n");
     printf("Item\t\tQuantity (kg)\tPrice per kg (Rs.)\tTotal Price (Rs.)\n");
     printf("Rice\t\t%.2f\t\t%.2f\t\t\t%.2f\n", quantityRice, priceRice, priceRice * quantityRice);
-    printf("Sugar\t\t%.2f\t\t%.2f\t\t\t%.2f\n…
+    printf("Sugar\t\t%.2f\t\t%.2f\t\t\t%.2f\n", quantitySugar, priceSugar, priceSugar * quantitySugar);
+    printf("Total Bill:\t\t\t\t\t%.2f\n", totalBill);
 
+    return 0;
+}
 
 
 [2:13 PM, 11/3/2023] Jeet: exercise 1 complete
