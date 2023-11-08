@@ -926,3 +926,134 @@ int main() {
 
     return 0;
 }
+
+// e9 q2
+
+#include <stdio.h>
+
+struct RoomCondition {
+    float humidity;
+    float temperature;
+    int AQI;
+};
+
+int main() {
+    printf("Jeet Patel\n23BIT156\n");
+
+    struct RoomCondition readings[5];
+    struct RoomCondition sum = {0.0, 0.0, 0};
+
+    for (int i = 0; i < 5; i++) {
+        printf("Enter humidity for reading %d: ", i + 1);
+        scanf("%f", &readings[i].humidity);
+        printf("Enter temperature for reading %d: ", i + 1);
+        scanf("%f", &readings[i].temperature);
+        printf("Enter AQI for reading %d: ", i + 1);
+        scanf("%d", &readings[i].AQI);
+
+        sum.humidity += readings[i].humidity;
+        sum.temperature += readings[i].temperature;
+        sum.AQI += readings[i].AQI;
+    }
+
+    float avg_humidity = sum.humidity / 5;
+    float avg_temperature = sum.temperature / 5;
+    int avg_AQI = sum.AQI / 5;
+
+    printf("\nAverage Room Condition:\n");
+    printf("Average Humidity: %.2f\n", avg_humidity);
+    printf("Average Temperature: %.2f\n", avg_temperature);
+    printf("Average AQI: %d\n", avg_AQI);
+
+    return 0;
+}
+
+Exercise 9 complete
+
+// e10 q1
+
+#include <stdio.h>
+
+int main() {
+    printf("Jeet Patel\n23BIT156\n");
+
+    char input[1000];
+
+    
+    printf("Enter data to be written to the file (Ctrl+D or Ctrl+Z to end input):\n");
+    while (fgets(input, sizeof(input), stdin) != NULL) {
+        
+        FILE *file = fopen("INPUT.txt", "a");
+        if (file == NULL) {
+            printf("Failed to open the file for writing.\n");
+            return 1;
+        }
+
+        fprintf(file, "%s", input); 
+        fclose(file); 
+
+        printf("Enter more data or press Ctrl+D or Ctrl+Z to end input:\n");
+    }
+
+    
+    printf("\nData read from the INPUT file:\n");
+    FILE *input_file = fopen("INPUT.txt", "r"); 
+    if (input_file == NULL) {
+        printf("Failed to open the file for reading.\n");
+        return 1;
+    }
+
+    while (fgets(input, sizeof(input), input_file) != NULL) {
+        printf("%s", input);
+    }
+
+    fclose(input_file); 
+
+    return 0;
+}
+
+
+// e10 q2
+
+#include <stdio.h>
+
+int main() {
+    printf("Jeet Patel\n23BIT156\n");
+
+    char additionalData[1000];
+
+    // Read additional data from the keyboard
+    printf("Enter additional data to append to the file (Ctrl+D or Ctrl+Z to end input):\n");
+    while (fgets(additionalData, sizeof(additionalData), stdin) != NULL) {
+        // Open the file for appending
+        FILE *file = fopen("existing_file.txt", "a");
+        if (file == NULL) {
+            printf("Failed to open the file for appending.\n");
+            return 1;
+        }
+
+        // Write the additional data to the file
+        fprintf(file, "%s", additionalData);
+        fclose(file); // Close the file
+
+        printf("Enter more additional data or press Ctrl+D or Ctrl+Z to end input:\n");
+    }
+
+    // Read and display the total contents of the file
+    printf("\nTotal contents of the file:\n");
+    FILE *existingFile = fopen("existing_file.txt", "r"); // Open the file for reading
+    if (existingFile == NULL) {
+        printf("Failed to open the file for reading.\n");
+        return 1;
+    }
+
+    char content[1000];
+
+    while (fgets(content, sizeof(content), existingFile) != NULL) {
+        printf("%s", content);
+    }
+
+    fclose(existingFile); // Close the file
+
+    return 0;
+}
