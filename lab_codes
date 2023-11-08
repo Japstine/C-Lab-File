@@ -891,3 +891,38 @@ int main() {
 }
 
 // Exer 8 complete
+
+
+// E9 Q1
+
+#include <stdio.h>
+
+
+struct personal {
+    char name[50];
+    char date_of_joining[20];
+    float salary;
+};
+
+int main() {
+    
+    printf("Jeet Patel\n23BIT156\n");
+    
+    struct personal person;
+
+    printf("Enter person's name: ");
+    fgets(person.name, sizeof(person.name), stdin);
+
+    printf("Enter date of joining: ");
+    fgets(person.date_of_joining, sizeof(person.date_of_joining), stdin);
+
+    printf("Enter salary: ");
+    scanf("%f", &person.salary);
+
+    printf("\nPersonal Information:\n");
+    printf("Name: %s", person.name);
+    printf("Date of Joining: %s", person.date_of_joining);
+    printf("Salary: %.2f\n", person.salary);
+
+    return 0;
+}
